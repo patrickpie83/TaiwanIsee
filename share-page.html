@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- 頁籤圖  -->
+<link rel="icon" href="/TaiwanIsee/assets/logo-sm1-10506960.png">
+<title>Taiwan,I see.我想回覆頁面</title>
+<!-- font Anton&Inter CDN  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- bootstrap reset CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- google font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+<!-- jquery CDN -->
+<script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="../js/all.js"></script>
+<link rel="stylesheet" href="/Taiwan-I-see/assets/main-a68aa50d.css">
+  <script type="module" crossorigin src="/TaiwanIsee/assets/main-f7469e16.js"></script>
+  <link rel="stylesheet" href="/TaiwanIsee/assets/main-bd60f23b.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg shadow fixed-top" style="background-color: #333333;border-bottom-right-radius: 40px;
+border-bottom-left-radius: 40px;">
+
+    <div class="container d-flex align-items-center">
+        <div>
+            <a class="navbar-brand" href="index-logged.html"></a>
+        </div>
+
+
+         
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABtSURBVHgB7dNRDYAwDEXR1wQBk4AUpCANCUiYBCRMwhyU4mAkTQhwz09/lmxZeiUAAIAM7r55rnXk3knj6vVO5WkCJBs9GEtdYhTl6WbWleUNFe/KLe8QcK/iJcasPDUqbsryVMXf+UEAAPBPJy/iDCSDFRKQAAAAAElFTkSuQmCC" alt="icon_navbar" style="width: 40px;height: 40px;">
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav text-center align-items-end" >
+                
+              <li class="nav-item me-lg-3 d-flex borderBtm mb-3 mb-lg-0">
+                <!-- 這個連結還沒好 -->
+                <a class="nav-link" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADFSURBVHgB1ZKBDYJADEV7TnAj3AiOwAhsICO4AYziBo4gG+gG5wa6QW3NN14I3FElRn7yw6W0j14L0b/LjQWZ2cujFgeEeudcT59IYDvxDT7BqigOFpbCGhR36PIVD+KjCaoAFHSZnGfHNBNY6zULORVG4adyNsl5K75QXlexh4vAey4RKr1/C9fh3NCxtEgGqA79PDYjbFqX1tBcJUUR3QS4xTJULVkEwCEBMM57/J926AAeBrHvoBMfWh+0oqW0KOwnegDdJgh2Qa4cRgAAAABJRU5ErkJggg==" alt="icon_search"></a>
+                <input class="searchArea fw-bold" id="filterInput" type="text" placeholder="找景點" aria-label="search">
+              </li>
+    
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
+                <a class="nav-link fw-bold" href="attractions.html">景點內容</a>
+              </li>
+    
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
+                <a class="nav-link fw-bold" href="collect.html">我的收藏</a>
+              </li>
+    
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
+                <a class="nav-link fw-bold" href="record.html">歷史觀看紀錄</a>
+              </li>
+    
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
+                <p class="nav-link fw-bold mb-0" href="#" style="color: #ffffff;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADUSURBVHgB5ZLhDYIwEIWvxAEYoRvABrqBbiCjOIIb4AayATABI6gT6Ab1XfISwZQKNeEPL/nSpr2+XO9OZHUyvwKccykWC1JjTCP/CGY5uLmPdJ9LrGhw1SyBBRfQSYxo4PoZ9c7s2Lsk4PnimvbO7Nfd7CxrfvsACu5LiRVrp3V7kpJdX06jc8hm7EAmw9q1oMJM3n3vEo+R1qrGVsfjyOOWPMAeaC07jZWQaKY6hWrF8TkztggZagMqmSjGD7q+8cRlM0ZjC5qQoV46mS6Nb2XdegNn5r0ZnVRZ0QAAAABJRU5ErkJggg==" alt="">您好，王小明</p>
+              </li>
+    
+              <li class="nav-item fw-bold">
+                <a class="nav-link" href="index.html">登出</a>
+              </li>
+    
+            </ul>
+
+    
+          </div>
+
+
+
+
+
+    </div>
+  </nav>
+<!-- nav -->
+<div class="container my-4">
+    <span class="h2 text-primary fw-bold border-bottom border-3 border-primary">分享我的體驗</span>
+    <div class="recommand-footer mt-5 mb-2">
+        <div class="my-3">
+            <img src="/TaiwanIsee/assets/people-9-71baf357.jpg" width="35" height="35" class="rounded-circle" alt="劉小姐的照片">
+            <span>劉小姐</span>
+        </div>
+        <div class="recommand-info ">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">分享內容</label>
+                    <textarea class="form-control bg-white shadow" id="exampleFormControlTextarea1" rows="6" required placeholder=
+                    "梅山太平老街是我曾經造訪過的台灣地方中，最令人難以忘懷的一個。這個老街充滿濃厚的懷舊情懷，每一塊古老的磚瓦和木頭建築都仿佛訴說著過去的故事。漫步在這條老街上，彷彿穿越時光，感受到了台灣歷史的厚重。太平老街的古色古香，令人印象深刻。古老的店舖、傳統的攤販、懷舊的招牌，處處都充滿著台灣的獨特魅力。尤其是街頭小吃，味道讓人回味無窮，從肉圓到豆花，每一樣都是美食的極致享受。太平老街的居民也非常熱情友善，他們樂於與遊客交流，分享當地的歷史和文化。這種人情味讓我感到賓至如歸，讓整個旅程更加難忘。"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 上傳圖片 -->
+    <div class=" d-flex justify-content-between align-items-center" style="margin-top: 80px;margin-bottom: 32px;">
+        <h2 class="text-primary">上傳圖片</h2>
+        <div>
+            <button class="btn btn-danger me-2 rounded-pill" type="button">載入照片</button>
+            <button class="btn btn-secondary rounded-pill" type="button">上傳</button>
+        </div>
+    </div>    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100 rounded-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="90%" fill="currentColor" class="bi bi-card-image card-img-top" viewBox="0 0 16 16">
+                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+                </svg>
+            </div>
+        </div>        
+        <div class="col">
+            <div class="card h-100 rounded-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="90%" fill="currentColor" class="bi bi-card-image card-img-top" viewBox="0 0 16 16">
+                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+                </svg>
+            </div>
+        </div>  
+        <div class="col">
+            <div class="card h-100 rounded-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="90%" fill="currentColor" class="bi bi-card-image card-img-top" viewBox="0 0 16 16">
+                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 03 0z"/>
+                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+                </svg>
+            </div>
+        </div>  
+    </div>
+    <!-- 我的行程 -->
+    <div>
+        <h2 class="mb-4 text-primary" style="margin-top: 80px;">我的行程</h2>
+        <div class="row my-4">
+            <div class="container2">
+                <ul class="progressbar">
+                    <li class="active">景點名稱</li>
+                    <li>景點名稱</li>
+                    <li>景點名稱</li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="share-message.html">
+              <button class="btn btn-danger me-md-2 rounded-pill" type="button">留言</button>
+            </a>
+            <a href="share-schedule.html">
+              <button class="btn btn-secondary rounded-pill" type="button">取消</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="footer py-5">
+    <div class="container d-lg-flex ">
+        <div class="footerLogo" >
+            <a href="#"><img src="data:image/png;base64,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" alt="footer_logo"></a>
+        </div>
+    
+        <div class="footerContent ms-lg-3 d-flex flex-column justify-content-center">
+            <p class="footerTitle fw-bold">每個文化景點都會有個詳細的背景故事</p>
+            <p class="footerText">本網站致力於發掘與檢索台灣每個景點最深層的在地文化透過使用者們相互分享與回饋，找到彼此最有感的連結打造台灣人心中具深度的旅遊方式尋找深刻的景點。</p>
+
+            <!-- 此連結要到7-1 -->
+            <a href="list-schedule.html" class="footerContentbtn mx-auto ms-lg-0">
+
+                <div class="position-relative">
+                    <div class="btnUnder"></div>
+
+                    <div class="d-flex align-items-center btnAbove ">
+                        <span class="fw-bold" style="color: white;letter-spacing: 4px;">開始我的景點之旅</span>
+                        <div class="footerContentbtnImg ms-2"></div>
+                    </div>
+                    
+                </div>
+                
+            </a>
+            
+        </div>
+
+        <div class="footerMenu d-flex flex-column ">
+            <ul>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+                <li><a href="privacy.html">隱私權保護政策</a></li>
+            </ul>
+
+            <span>Copyright © 2023 TaiwanIsee. All rights reserved.</span>
+        </div>
+    
+        
+    </div>
+</div>
+
+
+</body>
+</html>

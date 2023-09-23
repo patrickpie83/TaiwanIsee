@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 頁籤圖  -->
+    <link rel="icon" href="/TaiwanIsee/assets/logo-sm1-10506960.png">
+    <!-- og系列，for FB  -->
+    <meta property="og:title" content="Taiwan,I see.">
+    <meta property="og:description" content="台灣特色景點介紹">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.facebook.com/">
+    <meta property="og:image" content="https://drive.google.com/uc?export=view&id=1J5SXSI4VyRANABbySpGbL3TbMrLfk_qr">
+    <title>Taiwan, I See.</title>
+    <!-- font Anton&Inter CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootstrap reset CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script type="module" crossorigin src="/TaiwanIsee/assets/main-f7469e16.js"></script>
+    <link rel="stylesheet" href="/TaiwanIsee/assets/main-bd60f23b.css">
+  </head>
+
+
+  <body style="margin-top: -100px;">
+    <!-- backtotop -->
+    <button class="rounded-circle" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+    
+  <!-- AOS視差滾動 -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  });
+  </script>
+ 
+ 
+   
+  <div class="banner position-relative ">
+    <!-- header不一樣 -->
+    <nav class="navbar navbar-expand-lg py-4">
+
+    <div class="container d-flex align-items-start">
+        <div>
+            <a  href="index-logged.html">
+              <img src="data:image/png;base64,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" alt="logo＿index" style="width: 94px;height: 140px;">
+            </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABtSURBVHgB7dNRDYAwDEXR1wQBk4AUpCANCUiYBCRMwhyU4mAkTQhwz09/lmxZeiUAAIAM7r55rnXk3knj6vVO5WkCJBs9GEtdYhTl6WbWleUNFe/KLe8QcK/iJcasPDUqbsryVMXf+UEAAPBPJy/iDCSDFRKQAAAAAElFTkSuQmCC" alt="icon_navbar" style="width: 40px;height: 40px;">
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav text-center align-items-end">
+                
+              <li class="nav-item me-lg-3 d-flex borderBtm mb-3 mb-lg-0">
+                <!-- 這個連結還沒好 -->
+                <a class="nav-link" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADFSURBVHgB1ZKBDYJADEV7TnAj3AiOwAhsICO4AYziBo4gG+gG5wa6QW3NN14I3FElRn7yw6W0j14L0b/LjQWZ2cujFgeEeudcT59IYDvxDT7BqigOFpbCGhR36PIVD+KjCaoAFHSZnGfHNBNY6zULORVG4adyNsl5K75QXlexh4vAey4RKr1/C9fh3NCxtEgGqA79PDYjbFqX1tBcJUUR3QS4xTJULVkEwCEBMM57/J926AAeBrHvoBMfWh+0oqW0KOwnegDdJgh2Qa4cRgAAAABJRU5ErkJggg==" alt=""></a>
+                <input class="searchArea fw-bold" id="filterInput" type="text" placeholder="找景點" aria-label="search">
+              </li>
+    
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
+                <a class="nav-link fw-bold" href="attractions.html">景點內容</a>
+              </li>
+    
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
+                <a class="nav-link fw-bold" href="collect.html">我的收藏</a>
+              </li>
+    
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
+                <a class="nav-link fw-bold" href="record.html">歷史觀看紀錄</a>
+              </li>
+    
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
+                <p class="nav-link fw-bold mb-0" href="#" style="color: #ffffff;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADUSURBVHgB5ZLhDYIwEIWvxAEYoRvABrqBbiCjOIIb4AayATABI6gT6Ab1XfISwZQKNeEPL/nSpr2+XO9OZHUyvwKccykWC1JjTCP/CGY5uLmPdJ9LrGhw1SyBBRfQSYxo4PoZ9c7s2Lsk4PnimvbO7Nfd7CxrfvsACu5LiRVrp3V7kpJdX06jc8hm7EAmw9q1oMJM3n3vEo+R1qrGVsfjyOOWPMAeaC07jZWQaKY6hWrF8TkztggZagMqmSjGD7q+8cRlM0ZjC5qQoV46mS6Nb2XdegNn5r0ZnVRZ0QAAAABJRU5ErkJggg==" alt="">您好，王小明</p>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="index.html">登出</a>
+              </li>
+    
+            </ul>
+
+    
+          </div>
+
+
+
+
+
+    </div>
+  </nav>
+    <!-- 大標區塊 -->
+    <div class="container">
+      <h1 class="indexTitle">Taiwan,<br class="indexTitlebr">
+         I see.</h1>       
+
+      <!-- 此連結要到7-1 -->
+      <a href="list-schedule.html" class="footerContentbtn">
+          <div class="position-relative">
+              <div class="btnUnder"></div>
+
+              <div class="d-flex align-items-center btnAbove ">
+                  <span class="fw-bold" style="color: white;letter-spacing: 4px;">開始我的景點之旅</span>
+                  <div class="footerContentbtnImg ms-2"></div>
+              </div>
+          </div>
+      </a>
+    </div>
+
+    <!-- 本月推薦區塊 -->
+    <div class="d-flex justify-content-end">
+      <!-- 膚色底區塊 -->
+      <div class="monthPromotionbg bg-body">
+
+        <!-- 小標籤 -->
+        <div class="monthTag position-relative bg-primary">
+          <div class="position-absolute d-flex">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADwSURBVHgB7ZRRDYMwEIavywQgAQdMAlMwHAASUMAkTAIONgngAAdDAg66v1mflrVcC4SX+5JLCXc037XkiAThYJQrobXOsZTEp1FKzbQVEKh0GBVFcGbUDIjOk78hCsSFdhJ442g7VxKdkxUo8Zy5t6EB+9xjBJbo7Zogck/d9O/lagF0NaHzq6ckR7Su5BYnYCR6Vw5yKXk40cGIAOcfSOxU5DCGTkOOQGGDQ03+oRUlYDoaF2pSG8HTkCPwwrHWvgJckTmhJ32n4e8VZGsFOPR2NdOwDflwq0E0o/PGCrgYdxOwEg+KQAaRCIiAIHwA67pn35VuHM0AAAAASUVORK5CYII=" alt="flag">
+            <h4 class="mb-0 ms-1 text-white fw-bold">本月推廣</h4>
+          </div>
+        </div>
+
+        <!-- 內容區塊 -->
+        <div class="monthPromotion " data-aos="fade-up">
+          
+          <!-- 主圖 -->
+          <div class="mb-3 d-flex justify-content-center">
+            <a href="in attractions-范姜老屋群.html"><img  class="monthImg" src="/TaiwanIsee/assets/this_month-724b85c7.png" alt="this_month"></a>      
+          </div>
+
+          <!-- 標題＋內文 -->
+          <div class="monthContent">
+            <img class="mb-12" src="data:image/png;base64,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" alt="this_month_name">
+
+            <div class="d-flex mb-12">
+              <img class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG/SURBVHgBvVTNTcNQDLZfKfRGmQCYgIzQHlEBwQDQdALgAoQL7SmIS9mAVzFAQBBxLCPABHQDegMa8oxdBEpe0wQhxCc5enHsz3/PAfhjYJHBne8uRQSOnEszMGgc6IdfEYb+tkuodoHIAcThWElU5ecAgToN71Jn+aks5e1ps8tkXSK6jt7UwtpRbywlUMsE0CPAC7H5UYahv3NCiHuosD6tvPDMdciYPhjqrB1fnk8llH7FYJ4QVKvhaQ05CH2XW2K60ata3mrrYWbJBuIaxxjYZEHbrYokdV825dnYTepThNybGj8f7azLFfMkIqVC2uEaUa1MJRQg4HPyPVbxJjtWRehdKsjHTDogSC9SEaOXki7PGYeHNK+MurLCLxqrotRQbny3hmgCu9FZ+BqgUWpr41B/B0qVvO7peyAclit0AgUwYJoywCTZBOFnytjhjdiTbCEnO25Pe2w74Z+B8LQZ8JY4vBn1VU8PbDIutc9k9w2v17J9M1dv9IotiRUTBcn7J+eYTCDfRm+4n+WLeWXFQH0e/TAaYV10sxW6IP7zlAAnMi8ktEnHlwqxmkdWSJgiZRSR/RhCau/yv+ED3LjWfsyPJV0AAAAASUVORK5CYII=" alt="icon_location" style="height: 20px">
+              <p class="mb-0 ms-1" style="color: #B4875E;">桃園市新屋區中正路110巷</p>
+            </div>
+            
+            <p class="mb-4" style="font-size: 16px;line-height: 1.5;letter-spacing:0.02em;">范姜老屋群是一個古老而迷人的文化遺址，充滿歷史價值和獨特魅力。這個老屋群以其保存完整的傳統建築風格而聞名，展示了過去的生活方式和建築工藝。在這裡，您可以漫步於古老的巷道，欣賞傳統中國建築的精湛細節，並感受悠久的歷史氛圍。范姜老屋群也常舉辦文化活動和展覽，讓遊客更深入了解當地的文化傳承和歷史故事。</p>
+            <div class="d-flex justify-content-end">
+                <a class="text-decoration-none text-success" href="in attractions-范姜老屋群.html">瀏覽更多 
+                    <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+                </a>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- 直接找景點區塊 -->
+    <div class="container chooseType">
+
+
+      <div class="row justify-content-between">
+        <!-- 依地區區塊 -->
+        <div class="col-xl-6"  data-aos="fade-right">
+
+          <h2 class="mb-1 text-primary" style="font-size: 48px;line-height: 1.2;">直接找景點</h2>
+          <p class="mb-0" style="color:#B4875E;font-size: 18px;line-height: 1.2;">Choose Your Type</p>
+          <div class="d-flex mb-12 mt-32 align-items-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAXSURBVHgBzcABAQAAAMEw+ofmMb4OETt45gP+meY9bAAAAABJRU5ErkJggg==" alt="line_40" style="width: 40px;height: 1px;">
+            <p class="text-white mb-0 ms-12" >依地區</p>
+          </div>
+          
+          <a href="attractions.html" class="chooseNorth" style="text-decoration: none;">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgBrZU9SwNBEIbfmSh+NFooWF4ELVXERhC0svEzrWg8/4F2xiax8ezUX+CpYBu/8gMCKSwDWohNoqSxkVQaCN64e9EQw+W4JD5wLLs7897c3M4swYNkwuzv7PkySXhWBBOAGO6GUJYYeYhzvRC7sL18qX7h5mB9lZlPIeiHP3mC7NcLc+3k7nDziImTAcQ0hoBOU1Y07hmh3hAggVYgOl7cPdupCqasDVO/DW3gCEeW9+wrV/DOiubUYKAdCMVyicMhHZ2amV424al5DA6P4f31KYhkdyjkvDGIVxpZFB4zGBqdxMhMBMGipDmW3zPmQbn0gftLqxnRcYZ7cBvTpKjBCEBHVy861UMBbFUOVSn50NM3gOm1GAoPGTxnkvCFKMsEyv6LmEbkhYWcdKP9oZHJ4GI6QPAVuZ2l28kFrF8/ufxi7CzMkYRddBzeQpuo1O3r0f3LugZVYzhBiyhf1cZsuyJcw60VTaiFeJNiJ0ux821UI60jZZmq80gcPhVU8SSVKtrSX/dnuZG9FgbLiroCDHUcJn5E8kTIqlaXLn/C1vmv9/sGidic8hFJawAAAAAASUVORK5CYII=" alt="icon_brownarrow" >
+            <span class="ms-2 text-white">北部</span>
+          </a>
+
+          <div class="d-flex">
+            <div class="w66">
+
+              <div class="d-flex">
+                <a href="attractions.html" class="chooseIsland" style="text-decoration: none;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgBrZU9SwNBEIbfmSh+NFooWF4ELVXERhC0svEzrWg8/4F2xiax8ezUX+CpYBu/8gMCKSwDWohNoqSxkVQaCN64e9EQw+W4JD5wLLs7897c3M4swYNkwuzv7PkySXhWBBOAGO6GUJYYeYhzvRC7sL18qX7h5mB9lZlPIeiHP3mC7NcLc+3k7nDziImTAcQ0hoBOU1Y07hmh3hAggVYgOl7cPdupCqasDVO/DW3gCEeW9+wrV/DOiubUYKAdCMVyicMhHZ2amV424al5DA6P4f31KYhkdyjkvDGIVxpZFB4zGBqdxMhMBMGipDmW3zPmQbn0gftLqxnRcYZ7cBvTpKjBCEBHVy861UMBbFUOVSn50NM3gOm1GAoPGTxnkvCFKMsEyv6LmEbkhYWcdKP9oZHJ4GI6QPAVuZ2l28kFrF8/ufxi7CzMkYRddBzeQpuo1O3r0f3LugZVYzhBiyhf1cZsuyJcw60VTaiFeJNiJ0ux821UI60jZZmq80gcPhVU8SSVKtrSX/dnuZG9FgbLiroCDHUcJn5E8kTIqlaXLn/C1vmv9/sGidic8hFJawAAAAAASUVORK5CYII=" alt="icon_brownarrow" >
+                  <span class="ms-2 text-white">離島</span>
+                </a>
+
+                <a href="attractions.html" class="chooseMiddle" style="text-decoration: none;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgBrZU9SwNBEIbfmSh+NFooWF4ELVXERhC0svEzrWg8/4F2xiax8ezUX+CpYBu/8gMCKSwDWohNoqSxkVQaCN64e9EQw+W4JD5wLLs7897c3M4swYNkwuzv7PkySXhWBBOAGO6GUJYYeYhzvRC7sL18qX7h5mB9lZlPIeiHP3mC7NcLc+3k7nDziImTAcQ0hoBOU1Y07hmh3hAggVYgOl7cPdupCqasDVO/DW3gCEeW9+wrV/DOiubUYKAdCMVyicMhHZ2amV424al5DA6P4f31KYhkdyjkvDGIVxpZFB4zGBqdxMhMBMGipDmW3zPmQbn0gftLqxnRcYZ7cBvTpKjBCEBHVy861UMBbFUOVSn50NM3gOm1GAoPGTxnkvCFKMsEyv6LmEbkhYWcdKP9oZHJ4GI6QPAVuZ2l28kFrF8/ufxi7CzMkYRddBzeQpuo1O3r0f3LugZVYzhBiyhf1cZsuyJcw60VTaiFeJNiJ0ux821UI60jZZmq80gcPhVU8SSVKtrSX/dnuZG9FgbLiroCDHUcJn5E8kTIqlaXLn/C1vmv9/sGidic8hFJawAAAAAASUVORK5CYII=" alt="icon_brownarrow" >
+                  <span class="ms-2 text-white">中部</span>
+                </a>
+              </div>
+
+              <a href="attractions.html" class="chooseSouth" style="text-decoration: none;">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgBrZU9SwNBEIbfmSh+NFooWF4ELVXERhC0svEzrWg8/4F2xiax8ezUX+CpYBu/8gMCKSwDWohNoqSxkVQaCN64e9EQw+W4JD5wLLs7897c3M4swYNkwuzv7PkySXhWBBOAGO6GUJYYeYhzvRC7sL18qX7h5mB9lZlPIeiHP3mC7NcLc+3k7nDziImTAcQ0hoBOU1Y07hmh3hAggVYgOl7cPdupCqasDVO/DW3gCEeW9+wrV/DOiubUYKAdCMVyicMhHZ2amV424al5DA6P4f31KYhkdyjkvDGIVxpZFB4zGBqdxMhMBMGipDmW3zPmQbn0gftLqxnRcYZ7cBvTpKjBCEBHVy861UMBbFUOVSn50NM3gOm1GAoPGTxnkvCFKMsEyv6LmEbkhYWcdKP9oZHJ4GI6QPAVuZ2l28kFrF8/ufxi7CzMkYRddBzeQpuo1O3r0f3LugZVYzhBiyhf1cZsuyJcw60VTaiFeJNiJ0ux821UI60jZZmq80gcPhVU8SSVKtrSX/dnuZG9FgbLiroCDHUcJn5E8kTIqlaXLn/C1vmv9/sGidic8hFJawAAAAAASUVORK5CYII=" alt="icon_brownarrow" >
+                <span class="ms-2 text-white">南部</span>
+              </a>
+            </div>
+
+            <a href="attractions.html" class="chooseEast" style="text-decoration: none;">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgBrZU9SwNBEIbfmSh+NFooWF4ELVXERhC0svEzrWg8/4F2xiax8ezUX+CpYBu/8gMCKSwDWohNoqSxkVQaCN64e9EQw+W4JD5wLLs7897c3M4swYNkwuzv7PkySXhWBBOAGO6GUJYYeYhzvRC7sL18qX7h5mB9lZlPIeiHP3mC7NcLc+3k7nDziImTAcQ0hoBOU1Y07hmh3hAggVYgOl7cPdupCqasDVO/DW3gCEeW9+wrV/DOiubUYKAdCMVyicMhHZ2amV424al5DA6P4f31KYhkdyjkvDGIVxpZFB4zGBqdxMhMBMGipDmW3zPmQbn0gftLqxnRcYZ7cBvTpKjBCEBHVy861UMBbFUOVSn50NM3gOm1GAoPGTxnkvCFKMsEyv6LmEbkhYWcdKP9oZHJ4GI6QPAVuZ2l28kFrF8/ufxi7CzMkYRddBzeQpuo1O3r0f3LugZVYzhBiyhf1cZsuyJcw60VTaiFeJNiJ0ux821UI60jZZmq80gcPhVU8SSVKtrSX/dnuZG9FgbLiroCDHUcJn5E8kTIqlaXLn/C1vmv9/sGidic8hFJawAAAAAASUVORK5CYII=" alt="icon_brownarrow" >
+              <span class="ms-2 text-white">東部</span>
+            </a>
+          </div>
+          
+        </div>
+
+        <!-- 依類型區塊 -->
+        <div class="col-xl-5 myMt"  data-aos="fade-left">
+          <div class="d-flex justify-content-end">
+            <img class=" d-none d-xl-block" src="/TaiwanIsee/assets/icon_map-0422d09c.png" alt="icon_map">
+            <img class="ms-5 d-none d-xl-block" src="/TaiwanIsee/assets/icon_camera-f5cdcda0.png" alt="icon_camera">
+          </div>
+
+          <div class="d-flex mb-12 mt-12 align-items-center">
+            <div class="lineImg"></div>
+            <p class="textColor mb-0 ms-12" >依類型</p>
+          </div>
+          
+          <div class="myRadius-24 bg-white shadow pt-4 pb-44 ps-4 pe-4">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHxSURBVHgBxVfNVcJAEJ5JeD5uYgVQAlQgJ0UuhA7oQKzAZwVCB1qBwYN4swXsIFYAHnyPi4wbwk92szNheZh8h7xk9tudLzOZ2Q1CHt57cyCoZewIC+hMLnRuMASiR+s6hHfQDUem2YM82JwniBy4AL6FnytgGjTYMVIRyILnr6z8HAEr4Y0Av7MmOmfp/jECPEkAzDMWQp7/e4wAKaQAX1kT8fybMLKZcXf3EtSgSnMoCkRj6L4O9xE4E9/29EBvnZK9ADnf/4EocbsFlS3AKzgFO7dblBSBCuwFzADxQefQvXVqvA8Qjg3upbq0GX6o+J+abZn0BQQOUlmiEtuZtDTbWzBSnfDWyvewD9dhaB0CDlUhJbZ9AAU+sw/IAsQuiJHFWOf59p1QFiB/lNk2jMTzmTYsC5DK0mUrRj78iRveidvhwuXgkkJSBcnBY6CPUE8t2mSmPUE6DbFzrgLWAvBZs/iqLK/CWXxb2SzQVAvoNU8ggAa6Hokbp8ZcG2PnawFJCopuw6myTASU1IbLE7A0I+BRHYpEPzRTgEVGIEo/2L/fadBWqj6sY4AT1dkCg6+41LbSfWxtS86G/D8jE7SKXOjwIzciTkCDnbE5TOoQjuOpfJ9GgL21Nhy4BwmQZiwO5mI+1z0C5uHC/QdWwx+9nJODXIKr+AAAAABJRU5ErkJggg==" alt="icon_mark">
+            <div class="chooseCulture d-flex flex-wrap ">
+              <a href="attractions.html" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 特色夜市</a>
+              <a href="attractions.html" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 老街漫遊</a>
+              <a href="attractions.html" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 古蹟巡禮</a>
+              <a href="attractions.html" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 博物館別</a>
+              <a href="attractions.html" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 戰地文化</a>
+              <a href="attractions.html" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 原民文化</a>
+              <a href="attractions.html" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 客家文化</a>
+              <a href="attractions.html" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 山明水秀</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <!-- 波浪底圖 -->
+    <div class="imgType bottom-0" style="margin-bottom: -2px;"></div>
+  
+  </div>
+
+  <div class="blankArea"></div>
+
+  <div class="container mt-124 pb-5 backgroundSliper">
+    <h2 class="mb-1 text-primary" style="font-size: 48px;line-height: 1.2;">熱門收藏景點</h2>
+    <p class="mb-0" style="color:#B4875E;font-size: 18px;line-height: 1.2;">Best Tourist Attractions</p>
+
+    <!-- 輪播 -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators top-100 mt-xl-5">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!-- 第一頁 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-between mt-32">
+
+            <div class="col-xl-3 col-lg-6 mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/野柳地質公園-1-f9d9d4f1.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">新北市 萬里區</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">野柳地質公園</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0"> 8899人收藏</p>
+                <a class="text-decoration-none text-success" href="in attractions-野柳地質公園.html">瀏覽更多 
+                  <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+              </a>
+              </div>
+            </div>
+    
+            <div class="col-xl-3 col-lg-6  mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/光隆博物館-1-59ba0de5.png);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">花蓮縣 新城鄉</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">光隆博物館</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0"> 8745人收藏</p>
+                    <a class="text-decoration-none text-success" href="in attractions-光隆博物館.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+              </div>
+            </div>
+    
+            <div class="col-xl-3 col-lg-6  mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/梅山太平老街-1-498df1b6.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">嘉義縣 梅山鄉</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">梅山太平老街</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0"> 7062人收藏</p>
+                    <a class="text-decoration-none text-success" href="in attractions-梅山太平老街.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+              </div>
+            </div>
+    
+            <div class="col-xl-3 col-lg-6  mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/東勢客家文化園區-1-756bccf1.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">台中市 東勢區</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">東勢客家文化園區</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0"> 6311人收藏</p>
+                    <a class="text-decoration-none text-success" href="in attractions-東勢客家文化園區.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- 第二頁 -->         
+        <div class="carousel-item">
+          <div class="row justify-content-between mt-32">
+
+            <div class="col-xl-3 col-lg-6  mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/椬梧滯洪池-1-3d0bafd2.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">雲林縣 口湖鄉</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">椬梧滯洪池</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0"> 5899人收藏</p>
+                    <a class="text-decoration-none text-success" href="in attractions-椬梧滯洪池.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6  mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/蘭嶼-1-ab56b630.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">臺東縣 蘭嶼鄉</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">蘭嶼</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0"> 5111人收藏</p>
+                    <a class="text-decoration-none text-success" href="in attractions-蘭嶼.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+              </div>
+            </div>
+    
+            <div class="col-xl-3 col-lg-6  mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/四八坑道-1-b4629e78.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">花蓮縣 花蓮市</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">四八坑道</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0"> 3470人收藏</p>
+                    <a class="text-decoration-none text-success" href="in attractions-四八坑道.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+              </div>
+            </div>
+    
+            <div class="col-xl-3 col-lg-6  mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/北甲宮夜市-1-50fd212e.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">澎湖縣 馬公市</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">北甲宮夜市</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0"> 2653人收藏</p>
+                    <a class="text-decoration-none text-success" href="in attractions-北甲宮夜市.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+              </div>
+            </div>
+    
+            
+          </div>
+        </div>
+
+        <!-- 第三頁 -->
+        <div class="carousel-item">
+          <div class="row justify-content-between mt-32">
+
+            <div class="col-xl-3 col-lg-6  mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/文臺寶塔-1-5cf60c0b.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">金門縣 金城鎮</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">文臺寶塔</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0"> 2560人收藏</p>
+                    <a class="text-decoration-none text-success" href="in attractions-文臺寶塔.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+              </div>
+            </div>
+    
+            <div class="col-xl-3 col-lg-6  mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/池上客家文化園區-1-1eef906e.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">臺東縣 池上鄉</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">池上客家文化園區</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0"> 2099人收藏</p>
+                    <a class="text-decoration-none text-success" href="in attractions-池上客家文化園區.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6  mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/芹壁村-2-26914993.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">連江縣 北竿鄉</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">芹壁村</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0">1985人收藏</p>
+                    <a class="text-decoration-none text-success" href="in attractions-芹壁村.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6  mb-5">
+              <div class="d-flex p-3 position-relative" style="background-image:url(/TaiwanIsee/assets/賽夏族矮靈祭-1-3a445537.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+    
+                <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                  <p class="mb-0 ms-1">新竹縣 五峰鄉</p>
+                </div>
+                
+                <div class="ms-auto">
+                  
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                </div>
+              </div>
+              <h5 class="mt-12 mb-2">賽夏族矮靈祭</h5>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0"> 1974人收藏</p>
+                    <a class="text-decoration-none text-success" href="in attractions-賽夏族矮靈祭.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- 跑馬燈 -->
+  <div style="margin-top: 76px;width: 100%;height: 200px;background-image: url(/TaiwanIsee/assets/img_marquee_bg-21b03e26.png);background-size: cover;background-position: center center;overflow: hidden;">
+
+    <div class="marqueeArea">
+
+      <div class="marqueeText">
+        <sapn  style="font-size:120px;font-family:'Anton', 'Microsoft JhengHei',sans-serif;color:transparent;-webkit-text-stroke: 2px #ffffff;color:transparent;float: left;width: 50%;">Taiwan's cultural allure lies in its ability to seamlessly blend tradition with innovation, offering a truly enriching experience.</sapn>
+        <sapn style="font-size:120px;font-family:'Anton', 'Microsoft JhengHei',sans-serif;color:transparent;-webkit-text-stroke: 2px #ffffff;color:transparent;float: left;width: 50%;">Taiwan's cultural allure lies in its ability to seamlessly blend tradition with innovation, offering a truly enriching experience.</sapn>
+      </div>
+      
+    </div>
+
+  </div>
+
+
+  
+  <div class="container mt-64 mb-80 backgroundLeaves">
+    <div class="backimage"></div>
+    <h2 class="mb-1 text-primary" style="font-size: 48px;line-height: 1.2;">景點推薦</h2>
+    <p class="mb-0" style="color:#B4875E;font-size: 18px;line-height: 1.2;">Best Tourist Attractions</p>
+
+    <!-- 景點推薦輪播 -->
+    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators top-100 mt-2">
+        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner p-3">
+        
+        <!-- 第一頁 -->
+        <div class="container carousel-item active" data-bs-interval="10000">
+          <div class="row mt-3">
+            <div class="col-xxl-8 col-md-10 d-lg-flex justify-content-between bg-white p-3 myRadius-24" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);"  data-aos="fade-right">
+              <img class="myRadius-24 rwdWitdth" src="/TaiwanIsee/assets/首頁＿九份-da8c2a4f.png" style="height: 328px;	background-size: cover;
+              background-position: center center;" alt="首頁＿九份">
+    
+              <div class="pt-2 pe-1 pb-2 ps-1 d-flex flex-column rwdWitdth">
+    
+                <div class="d-flex justify-content-between mb-12">
+                  <div>
+                    <h4 class="mb-12">九份山城</h4>
+                    <span style="line-height: 1.2;color: #B4875E;">| 隱身山城裡的祕密風景</span>
+                  </div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANJSURBVHgB7Zo7TFNRGMf/53CRt1Aqj4GB+BpBJlEHnRwElURHG3UxMoEJJjpRnBlwkcFBYh2NKVEYcFAXLBOP1RCbyCBD0ypPob3H77ultbSFxHBu6Un4Tbent8n3P/d8j5t/BfYhOttTh614n1K4AqhWBdGKgiBiAmpO2WJcipKg50IwvOed+RajX3talYi/UuDAiwExJlXJUD4hMnshGrrRZ4vEbPEEz6h7tojPRkJd/dnf7HoC0ZnuQVvBjyJGCvg95z8MpT6nBTg7D3sERqAeeTsnnFgdAXzm+djQF3Uwg5hUVgfnhJMDFPygQcEzdVxk+EIkdz/+HQYiyyyPtFWiB4Zib8b7pZDqJgxFCFyW1F3PwVB4MrB0JO/UzAaGX8f+6zcDvjpc7azAwVAsQB+X2stRVfGvuS98+4PVdYWLtJ5idcPG9PwmdKFVwMNbx9HkLUl/Hg78wjyJGPDVpteWIwmtAiQM50jAYXMk4LA5EnDYFFwANzKdaBHQXJ9sXoHJFfykRrUX3JXffVpzrtvPHIMOtHTiNgrG11WDwMQKdd4t+K7V5Mw5HHhgchVr6zZ6b+/u2AdBRELdCprgMcH/MorFH9tOgNU0F/HaqRbLEdZ+tgwDd2q1Bc9oFZBiKrSBNxnHqZkC5umzTdOxycQVASl4mGN6acirqhRwA5erUHJv3AqecVUAn3udo3M+tL4PLFDAKfj8L+/kAOdEc0binmwppQTX81S0Clhc2sbo298568OB5OtmdaWkElutNZm1JzHv+uPnkZyGdpp2ffCBR2sJZbTnAAfIgWbjRvCMK0m8uBTPWZtecCeZXRHwcWbdSdrRpycQeNboXLtVjbQL4LPfWG9h9EkDjRClzrF5QUKavBZNovp7pqudOJs1mkZ1NzV6AiqMAuFCR46RYyPCMBTajjlJFuoXGIqCGpey3DLEF8tFqtKg9HQEyVTGZxiHGEt7ZEJZ99kdhzGIGBvffOUI2HHAh2AIZAenXft0I/N2vh8hk7voRXCMDTseMZNTmCOh62znF6HtKmK885nBO6v5bmXrNYGEXwh1F0UAFxnO03x/9ti3NToeMtmw7GQmzcDCPBXhTAcinKAeZVGZ50q5171/AT8nRjVcixEeAAAAAElFTkSuQmCC" style="width: 48px;height: 48px;" alt="icon_military">
+                </div>
+    
+                <p style="color: #666666;">當年金瓜石礦區為了因應地形而設置各種運輸工具，包括輕便台車道、空中索道、斜坡索道等設施，以利運送礦產及物資；位於勸濟堂與十三層選礦場遺址間的「六坑斜坡索道」，是目前保存較為完整的索道遺跡。</p>
+    
+                <div class="mt-auto">
+                  <div class="border-top border-bottom pt-1 pe-2 pb-1 ps-2" style="border-color: #d4d4d4;">
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">schedule</span>
+                    <span class="align-middle me-12" style="font-size: 14px;line-height: 1.2;">30 分鐘</span>
+                  
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">location_on</span>
+                    <span class="align-middle" style="font-size: 14px;line-height: 1.2;">新北市 九份區</span>
+                  </div>
+                  
+    
+                  <div class="d-flex mt-12">
+                    <a href="attractions.html" class="btn bg-light rounded-pill pt-1 pb-1 me-2" style="background-color: #E9E9E9!important;font-size: 14px;line-height: 1.2;">
+                      <span class="me-1">#</span>
+                        老街漫遊
+                    </a>
+                    <a href="attractions.html" class="btn bg-light rounded-pill pt-1 pb-1" style="background-color: #E9E9E9!important;font-size: 14px;line-height: 1.2;">
+                      <span class="me-1">#</span>
+                        山明水秀
+                    </a>
+                    <div class="ms-auto">
+                          <a class="text-decoration-none text-success" href="attractions.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+                    </div>
+    
+                  </div>
+                </div>
+                
+                
+              </div>
+    
+            </div>
+    
+            <div class="col-xxl-8 col-md-10 ms-auto mt-4 d-lg-flex bg-white p-3 myRadius-24 justify-content-between"  style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);"  data-aos="fade-left">
+              <img class="myRadius-24 rwdWitdth" src="/TaiwanIsee/assets/首頁＿鹿港-50d78e43.png" style="height: 328px;	background-size: cover;
+              background-position: center center;" alt="首頁＿鹿港">
+    
+              <div class="rwdWitdth pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
+    
+                <div class="d-flex justify-content-between mb-12">
+                  <div>
+                    <h4 class="mb-12">鹿港老街</h4>
+                    <span style="line-height: 1.2;color: #B4875E;">| 舊時代的熱鬧繁華街道</span>
+                  </div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANJSURBVHgB7Zo7TFNRGMf/53CRt1Aqj4GB+BpBJlEHnRwElURHG3UxMoEJJjpRnBlwkcFBYh2NKVEYcFAXLBOP1RCbyCBD0ypPob3H77ultbSFxHBu6Un4Tbent8n3P/d8j5t/BfYhOttTh614n1K4AqhWBdGKgiBiAmpO2WJcipKg50IwvOed+RajX3talYi/UuDAiwExJlXJUD4hMnshGrrRZ4vEbPEEz6h7tojPRkJd/dnf7HoC0ZnuQVvBjyJGCvg95z8MpT6nBTg7D3sERqAeeTsnnFgdAXzm+djQF3Uwg5hUVgfnhJMDFPygQcEzdVxk+EIkdz/+HQYiyyyPtFWiB4Zib8b7pZDqJgxFCFyW1F3PwVB4MrB0JO/UzAaGX8f+6zcDvjpc7azAwVAsQB+X2stRVfGvuS98+4PVdYWLtJ5idcPG9PwmdKFVwMNbx9HkLUl/Hg78wjyJGPDVpteWIwmtAiQM50jAYXMk4LA5EnDYFFwANzKdaBHQXJ9sXoHJFfykRrUX3JXffVpzrtvPHIMOtHTiNgrG11WDwMQKdd4t+K7V5Mw5HHhgchVr6zZ6b+/u2AdBRELdCprgMcH/MorFH9tOgNU0F/HaqRbLEdZ+tgwDd2q1Bc9oFZBiKrSBNxnHqZkC5umzTdOxycQVASl4mGN6acirqhRwA5erUHJv3AqecVUAn3udo3M+tL4PLFDAKfj8L+/kAOdEc0binmwppQTX81S0Clhc2sbo298568OB5OtmdaWkElutNZm1JzHv+uPnkZyGdpp2ffCBR2sJZbTnAAfIgWbjRvCMK0m8uBTPWZtecCeZXRHwcWbdSdrRpycQeNboXLtVjbQL4LPfWG9h9EkDjRClzrF5QUKavBZNovp7pqudOJs1mkZ1NzV6AiqMAuFCR46RYyPCMBTajjlJFuoXGIqCGpey3DLEF8tFqtKg9HQEyVTGZxiHGEt7ZEJZ99kdhzGIGBvffOUI2HHAh2AIZAenXft0I/N2vh8hk7voRXCMDTseMZNTmCOh62znF6HtKmK885nBO6v5bmXrNYGEXwh1F0UAFxnO03x/9ti3NToeMtmw7GQmzcDCPBXhTAcinKAeZVGZ50q5171/AT8nRjVcixEeAAAAAElFTkSuQmCC" style="width: 48px;height: 48px;" alt="icon_military">
+                </div>
+    
+                <p style="color: #666666;">鹿港繁盛時碼頭區的主幹─舊街，即今之埔頭、瑤林、大有三條街道，曲折的紅磚巷道兩旁林立著重新整修過的舊式店屋，其奧妙的內部格局和舊式外觀耐人尋味。</p>
+    
+                <div class="mt-auto">
+                  <div class="border-top border-bottom pt-1 pe-2 pb-1 ps-2" style="border-color: #d4d4d4;">
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">schedule</span>
+                    <span class="align-middle me-12" style="font-size: 14px;line-height: 1.2;">90 分鐘</span>
+                  
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">location_on</span>
+                    <span class="align-middle" style="font-size: 14px;line-height: 1.2;">彰化縣 鹿港鎮</span>
+                  </div>
+                  
+    
+                  <div class="d-flex mt-12">
+                    <a href="attractions.html" class="btn bg-light rounded-pill pt-1 pb-1 me-2" style="background-color: #E9E9E9!important;font-size: 14px;line-height: 1.2;">
+                      <span class="me-1">#</span>
+                        老街漫遊
+                    </a>
+                    <a href="attractions.html" class="btn bg-light rounded-pill pt-1 pb-1" style="background-color: #E9E9E9!important;font-size: 14px;line-height: 1.2;">
+                      <span class="me-1">#</span>
+                        古蹟巡禮
+                    </a>
+                    <div class="ms-auto">
+                          <a class="text-decoration-none text-success" href="attractions.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+                    </div>
+    
+                  </div>
+                </div>
+                
+                
+              </div>
+    
+            </div>
+          </div>
+        </div>
+
+        <!-- 第二頁 -->
+        <div class="container carousel-item">
+          <div class="row mt-3">
+            <div class="col-xxl-8 col-md-10 d-lg-flex bg-white p-3 myRadius-24 justify-content-between" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
+              <img class="myRadius-24  rwdWitdth" src="/TaiwanIsee/assets/羅娜部落-2-07503418.jpeg" style="height: 328px;	background-size: cover;background-position: center center;" alt="羅娜部落-2">
+    
+              <div class="rwdWitdth pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
+    
+                <div class="d-flex justify-content-between mb-12">
+                  <div>
+                    <h4 class="mb-12">羅娜部落</h4>
+                    <span style="line-height: 1.2;color: #B4875E;">| 全台灣最大的原住民部落</span>
+                  </div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANJSURBVHgB7Zo7TFNRGMf/53CRt1Aqj4GB+BpBJlEHnRwElURHG3UxMoEJJjpRnBlwkcFBYh2NKVEYcFAXLBOP1RCbyCBD0ypPob3H77ultbSFxHBu6Un4Tbent8n3P/d8j5t/BfYhOttTh614n1K4AqhWBdGKgiBiAmpO2WJcipKg50IwvOed+RajX3talYi/UuDAiwExJlXJUD4hMnshGrrRZ4vEbPEEz6h7tojPRkJd/dnf7HoC0ZnuQVvBjyJGCvg95z8MpT6nBTg7D3sERqAeeTsnnFgdAXzm+djQF3Uwg5hUVgfnhJMDFPygQcEzdVxk+EIkdz/+HQYiyyyPtFWiB4Zib8b7pZDqJgxFCFyW1F3PwVB4MrB0JO/UzAaGX8f+6zcDvjpc7azAwVAsQB+X2stRVfGvuS98+4PVdYWLtJ5idcPG9PwmdKFVwMNbx9HkLUl/Hg78wjyJGPDVpteWIwmtAiQM50jAYXMk4LA5EnDYFFwANzKdaBHQXJ9sXoHJFfykRrUX3JXffVpzrtvPHIMOtHTiNgrG11WDwMQKdd4t+K7V5Mw5HHhgchVr6zZ6b+/u2AdBRELdCprgMcH/MorFH9tOgNU0F/HaqRbLEdZ+tgwDd2q1Bc9oFZBiKrSBNxnHqZkC5umzTdOxycQVASl4mGN6acirqhRwA5erUHJv3AqecVUAn3udo3M+tL4PLFDAKfj8L+/kAOdEc0binmwppQTX81S0Clhc2sbo298568OB5OtmdaWkElutNZm1JzHv+uPnkZyGdpp2ffCBR2sJZbTnAAfIgWbjRvCMK0m8uBTPWZtecCeZXRHwcWbdSdrRpycQeNboXLtVjbQL4LPfWG9h9EkDjRClzrF5QUKavBZNovp7pqudOJs1mkZ1NzV6AiqMAuFCR46RYyPCMBTajjlJFuoXGIqCGpey3DLEF8tFqtKg9HQEyVTGZxiHGEt7ZEJZ99kdhzGIGBvffOUI2HHAh2AIZAenXft0I/N2vh8hk7voRXCMDTseMZNTmCOh62znF6HtKmK885nBO6v5bmXrNYGEXwh1F0UAFxnO03x/9ti3NToeMtmw7GQmzcDCPBXhTAcinKAeZVGZ50q5171/AT8nRjVcixEeAAAAAElFTkSuQmCC" style="width: 48px;height: 48px;" alt="icon_military">
+                </div>
+    
+                <p style="color: #666666;">以前這裡是鄒族居住的地方，早期部落前面有一塊泥澤地，鄒語的沼澤地發音很接近lolona的音，到了日治時期就稱這個地方叫lolona，日本人戰敗之後，他們就依循發音取地名稱為羅娜部落了。現在羅娜部落居住的多是從郡大山區被日本人迫遷下來郡社布農族人唷！</p>
+    
+                <div class="mt-auto">
+                  <div class="border-top border-bottom pt-1 pe-2 pb-1 ps-2" style="border-color: #d4d4d4;">
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">schedule</span>
+                    <span class="align-middle me-12" style="font-size: 14px;line-height: 1.2;">60 分鐘</span>
+                  
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">location_on</span>
+                    <span class="align-middle" style="font-size: 14px;line-height: 1.2;">南投縣 信義鄉</span>
+                  </div>
+                  
+    
+                  <div class="d-flex mt-12">
+                    <a href="attractions.html" class="btn bg-light rounded-pill pt-1 pb-1 me-2" style="background-color: #E9E9E9!important;font-size: 14px;line-height: 1.2;">
+                      <span class="me-1">#</span>
+                        原民文化
+                    </a>
+                    <a href="attractions.html" class="btn bg-light rounded-pill pt-1 pb-1" style="background-color: #E9E9E9!important;font-size: 14px;line-height: 1.2;">
+                      <span class="me-1">#</span>
+                        山明水秀
+                    </a>
+                    <div class="ms-auto">
+                          <a class="text-decoration-none text-success" href="in attractions-羅娜部落.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+                    </div>
+    
+                  </div>
+                </div>
+                
+                
+              </div>
+    
+            </div>
+    
+            <div class="col-xxl-8 col-md-10 ms-auto mt-4 d-lg-flex bg-white p-3 myRadius-24 justify-content-between"  style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
+              <img class="myRadius-24  rwdWitdth" src="/TaiwanIsee/assets/國立科學工藝博物館-3-3efb9077.jpg" style="height: 328px;	background-size: cover;
+              background-position: center center;" alt="國立科學工藝博物館-3">
+    
+              <div class="rwdWitdth pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
+    
+                <div class="d-flex justify-content-between mb-12">
+                  <div>
+                    <h4 class="mb-12">國立科學工藝博物館</h4>
+                    <span style="line-height: 1.2;color: #B4875E;">| 寓教於樂好所在</span>
+                  </div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANJSURBVHgB7Zo7TFNRGMf/53CRt1Aqj4GB+BpBJlEHnRwElURHG3UxMoEJJjpRnBlwkcFBYh2NKVEYcFAXLBOP1RCbyCBD0ypPob3H77ultbSFxHBu6Un4Tbent8n3P/d8j5t/BfYhOttTh614n1K4AqhWBdGKgiBiAmpO2WJcipKg50IwvOed+RajX3talYi/UuDAiwExJlXJUD4hMnshGrrRZ4vEbPEEz6h7tojPRkJd/dnf7HoC0ZnuQVvBjyJGCvg95z8MpT6nBTg7D3sERqAeeTsnnFgdAXzm+djQF3Uwg5hUVgfnhJMDFPygQcEzdVxk+EIkdz/+HQYiyyyPtFWiB4Zib8b7pZDqJgxFCFyW1F3PwVB4MrB0JO/UzAaGX8f+6zcDvjpc7azAwVAsQB+X2stRVfGvuS98+4PVdYWLtJ5idcPG9PwmdKFVwMNbx9HkLUl/Hg78wjyJGPDVpteWIwmtAiQM50jAYXMk4LA5EnDYFFwANzKdaBHQXJ9sXoHJFfykRrUX3JXffVpzrtvPHIMOtHTiNgrG11WDwMQKdd4t+K7V5Mw5HHhgchVr6zZ6b+/u2AdBRELdCprgMcH/MorFH9tOgNU0F/HaqRbLEdZ+tgwDd2q1Bc9oFZBiKrSBNxnHqZkC5umzTdOxycQVASl4mGN6acirqhRwA5erUHJv3AqecVUAn3udo3M+tL4PLFDAKfj8L+/kAOdEc0binmwppQTX81S0Clhc2sbo298568OB5OtmdaWkElutNZm1JzHv+uPnkZyGdpp2ffCBR2sJZbTnAAfIgWbjRvCMK0m8uBTPWZtecCeZXRHwcWbdSdrRpycQeNboXLtVjbQL4LPfWG9h9EkDjRClzrF5QUKavBZNovp7pqudOJs1mkZ1NzV6AiqMAuFCR46RYyPCMBTajjlJFuoXGIqCGpey3DLEF8tFqtKg9HQEyVTGZxiHGEt7ZEJZ99kdhzGIGBvffOUI2HHAh2AIZAenXft0I/N2vh8hk7voRXCMDTseMZNTmCOh62znF6HtKmK885nBO6v5bmXrNYGEXwh1F0UAFxnO03x/9ti3NToeMtmw7GQmzcDCPBXhTAcinKAeZVGZ50q5171/AT8nRjVcixEeAAAAAElFTkSuQmCC" style="width: 48px;height: 48px;" alt="icon_military">
+                </div>
+    
+                <p style="color: #666666;">這裡不只是室內展館寬敞，就連戶外都有大片的草皮及公共區域讓民眾散步，假日的草皮區是小孩最佳的遊樂場所．也有許多親子選擇在戶外玩耍，不進館內。小孩可以在草皮吹泡泡、奔跑、外圍還能騎車。</p>
+    
+                <div class="mt-auto">
+                  <div class="border-top border-bottom pt-1 pe-2 pb-1 ps-2" style="border-color: #d4d4d4;">
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">schedule</span>
+                    <span class="align-middle me-12" style="font-size: 14px;line-height: 1.2;">120 分鐘</span>
+                  
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">location_on</span>
+                    <span class="align-middle" style="font-size: 14px;line-height: 1.2;">高雄市 三民區</span>
+                  </div>
+                  
+    
+                  <div class="d-flex mt-12">
+                    <a href="attractions.html" class="btn bg-light rounded-pill pt-1 pb-1 me-2" style="background-color: #E9E9E9!important;font-size: 14px;line-height: 1.2;">
+                      <span class="me-1">#</span>
+                        博物館別
+                    </a>
+                    
+                    <div class="ms-auto">
+                          <a class="text-decoration-none text-success" href="in attractions-國立科學工藝博物館.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+                    </div>
+    
+                  </div>
+                </div>
+                
+                
+              </div>
+    
+            </div>
+          </div>
+        </div>
+
+        <!-- 第三頁 -->
+        <div class="container carousel-item">
+          <div class="row mt-3">
+            <div class="col-xxl-8 col-md-10 d-lg-flex bg-white p-3 myRadius-24 justify-content-between" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
+              <img class="myRadius-24 rwdWitdth" src="/TaiwanIsee/assets/金門歷史民俗博物館-1-c81d369d.jpeg" style="height: 328px;	background-size: cover;
+              background-position: center center;" alt="金門歷史民俗博物館-1">
+    
+              <div class="rwdWitdth pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
+    
+                <div class="d-flex justify-content-between mb-12">
+                  <div>
+                    <h4 class="mb-12">金門歷史民俗博物館</h4>
+                    <span style="line-height: 1.2;color: #B4875E;">| 景致宜人的博物館島</span>
+                  </div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANJSURBVHgB7Zo7TFNRGMf/53CRt1Aqj4GB+BpBJlEHnRwElURHG3UxMoEJJjpRnBlwkcFBYh2NKVEYcFAXLBOP1RCbyCBD0ypPob3H77ultbSFxHBu6Un4Tbent8n3P/d8j5t/BfYhOttTh614n1K4AqhWBdGKgiBiAmpO2WJcipKg50IwvOed+RajX3talYi/UuDAiwExJlXJUD4hMnshGrrRZ4vEbPEEz6h7tojPRkJd/dnf7HoC0ZnuQVvBjyJGCvg95z8MpT6nBTg7D3sERqAeeTsnnFgdAXzm+djQF3Uwg5hUVgfnhJMDFPygQcEzdVxk+EIkdz/+HQYiyyyPtFWiB4Zib8b7pZDqJgxFCFyW1F3PwVB4MrB0JO/UzAaGX8f+6zcDvjpc7azAwVAsQB+X2stRVfGvuS98+4PVdYWLtJ5idcPG9PwmdKFVwMNbx9HkLUl/Hg78wjyJGPDVpteWIwmtAiQM50jAYXMk4LA5EnDYFFwANzKdaBHQXJ9sXoHJFfykRrUX3JXffVpzrtvPHIMOtHTiNgrG11WDwMQKdd4t+K7V5Mw5HHhgchVr6zZ6b+/u2AdBRELdCprgMcH/MorFH9tOgNU0F/HaqRbLEdZ+tgwDd2q1Bc9oFZBiKrSBNxnHqZkC5umzTdOxycQVASl4mGN6acirqhRwA5erUHJv3AqecVUAn3udo3M+tL4PLFDAKfj8L+/kAOdEc0binmwppQTX81S0Clhc2sbo298568OB5OtmdaWkElutNZm1JzHv+uPnkZyGdpp2ffCBR2sJZbTnAAfIgWbjRvCMK0m8uBTPWZtecCeZXRHwcWbdSdrRpycQeNboXLtVjbQL4LPfWG9h9EkDjRClzrF5QUKavBZNovp7pqudOJs1mkZ1NzV6AiqMAuFCR46RYyPCMBTajjlJFuoXGIqCGpey3DLEF8tFqtKg9HQEyVTGZxiHGEt7ZEJZ99kdhzGIGBvffOUI2HHAh2AIZAenXft0I/N2vh8hk7voRXCMDTseMZNTmCOh62znF6HtKmK885nBO6v5bmXrNYGEXwh1F0UAFxnO03x/9ti3NToeMtmw7GQmzcDCPBXhTAcinKAeZVGZ50q5171/AT8nRjVcixEeAAAAAElFTkSuQmCC" style="width: 48px;height: 48px;" alt="icon_military">
+                </div>
+    
+                <p style="color: #666666;">金門歷史民俗博物館以金門學為基底出發，致力保存與展示金門歷史人文、傳統民俗，多面向呈現金門島嶼風貌及地方視野，並展現金門文化之於台灣、兩岸及國際地位重要連結與價值，目標轉型金門博物館，打造人人都能近用之博物館，形塑金門「文化入口，觀光起點」 。</p>
+    
+                <div class="mt-auto">
+                  <div class="border-top border-bottom pt-1 pe-2 pb-1 ps-2" style="border-color: #d4d4d4;">
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">schedule</span>
+                    <span class="align-middle me-12" style="font-size: 14px;line-height: 1.2;">120 分鐘</span>
+                  
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">location_on</span>
+                    <span class="align-middle" style="font-size: 14px;line-height: 1.2;">金門縣 金沙鎮</span>
+                  </div>
+                  
+    
+                  <div class="d-flex mt-12">
+                    <a href="attractions.html" class="btn bg-light rounded-pill pt-1 pb-1 me-2" style="background-color: #E9E9E9!important;font-size: 14px;line-height: 1.2;">
+                      <span class="me-1">#</span>
+                        博物館別
+                    </a>
+                    <a href="attractions.html" class="btn bg-light rounded-pill pt-1 pb-1" style="background-color: #E9E9E9!important;font-size: 14px;line-height: 1.2;">
+                      <span class="me-1">#</span>
+                        山明水秀
+                    </a>
+                    <div class="ms-auto">
+                          <a class="text-decoration-none text-success" href="in attractions-金門歷史民俗博物館.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+                    </div>
+    
+                  </div>
+                </div>
+                
+                
+              </div>
+    
+            </div>
+    
+            <div class="col-xxl-8 col-md-10 ms-auto mt-4 d-lg-flex bg-white p-3 myRadius-24 justify-content-between"  style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
+              <img class="myRadius-24  rwdWitdth" src="/TaiwanIsee/assets/中央老街-1-fdfb95bc.jpg" style="height: 328px;	background-size: cover;
+              background-position: center center;" alt="中央老街-1">
+    
+              <div class="rwdWitdth pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
+    
+                <div class="d-flex justify-content-between mb-12">
+                  <div>
+                    <h4 class="mb-12">中央老街</h4>
+                    <span style="line-height: 1.2;color: #B4875E;">| 四百多年歷史的街道</span>
+                  </div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANJSURBVHgB7Zo7TFNRGMf/53CRt1Aqj4GB+BpBJlEHnRwElURHG3UxMoEJJjpRnBlwkcFBYh2NKVEYcFAXLBOP1RCbyCBD0ypPob3H77ultbSFxHBu6Un4Tbent8n3P/d8j5t/BfYhOttTh614n1K4AqhWBdGKgiBiAmpO2WJcipKg50IwvOed+RajX3talYi/UuDAiwExJlXJUD4hMnshGrrRZ4vEbPEEz6h7tojPRkJd/dnf7HoC0ZnuQVvBjyJGCvg95z8MpT6nBTg7D3sERqAeeTsnnFgdAXzm+djQF3Uwg5hUVgfnhJMDFPygQcEzdVxk+EIkdz/+HQYiyyyPtFWiB4Zib8b7pZDqJgxFCFyW1F3PwVB4MrB0JO/UzAaGX8f+6zcDvjpc7azAwVAsQB+X2stRVfGvuS98+4PVdYWLtJ5idcPG9PwmdKFVwMNbx9HkLUl/Hg78wjyJGPDVpteWIwmtAiQM50jAYXMk4LA5EnDYFFwANzKdaBHQXJ9sXoHJFfykRrUX3JXffVpzrtvPHIMOtHTiNgrG11WDwMQKdd4t+K7V5Mw5HHhgchVr6zZ6b+/u2AdBRELdCprgMcH/MorFH9tOgNU0F/HaqRbLEdZ+tgwDd2q1Bc9oFZBiKrSBNxnHqZkC5umzTdOxycQVASl4mGN6acirqhRwA5erUHJv3AqecVUAn3udo3M+tL4PLFDAKfj8L+/kAOdEc0binmwppQTX81S0Clhc2sbo298568OB5OtmdaWkElutNZm1JzHv+uPnkZyGdpp2ffCBR2sJZbTnAAfIgWbjRvCMK0m8uBTPWZtecCeZXRHwcWbdSdrRpycQeNboXLtVjbQL4LPfWG9h9EkDjRClzrF5QUKavBZNovp7pqudOJs1mkZ1NzV6AiqMAuFCR46RYyPCMBTajjlJFuoXGIqCGpey3DLEF8tFqtKg9HQEyVTGZxiHGEt7ZEJZ99kdhzGIGBvffOUI2HHAh2AIZAenXft0I/N2vh8hk7voRXCMDTseMZNTmCOh62znF6HtKmK885nBO6v5bmXrNYGEXwh1F0UAFxnO03x/9ti3NToeMtmw7GQmzcDCPBXhTAcinKAeZVGZ50q5171/AT8nRjVcixEeAAAAAElFTkSuQmCC" style="width: 48px;height: 48px;" alt="icon_military">
+                </div>
+    
+                <p style="color: #666666;">短短兩百公尺的閩式商店街，可看到四百多年歷史的四眼井、摸乳巷、施公祠等，許多在地傳統特產都由此發跡，澎湖必買的黑糖糕、干貝醬、冰心糕這裡都買得到。懷舊的街巷中也不乏異國風情，巴洛克式的中藥行與日式老旅社，保留當年風華榮景，值得細細品味。</p>
+    
+                <div class="mt-auto">
+                  <div class="border-top border-bottom pt-1 pe-2 pb-1 ps-2" style="border-color: #d4d4d4;">
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">schedule</span>
+                    <span class="align-middle me-12" style="font-size: 14px;line-height: 1.2;">120 分鐘</span>
+                  
+                    <span style="font-size: 16px;" class="align-middle material-symbols-outlined">location_on</span>
+                    <span class="align-middle" style="font-size: 14px;line-height: 1.2;">澎湖縣 馬公市</span>
+                  </div>
+                  
+    
+                  <div class="d-flex mt-12">
+                    <a href="attractions.html" class="btn bg-light rounded-pill pt-1 pb-1 me-2" style="background-color: #E9E9E9!important;font-size: 14px;line-height: 1.2;">
+                      <span class="me-1">#</span>
+                        老街漫遊
+                    </a>
+                    <a href="attractions.html" class="btn bg-light rounded-pill pt-1 pb-1" style="background-color: #E9E9E9!important;font-size: 14px;line-height: 1.2;">
+                      <span class="me-1">#</span>
+                        古蹟巡禮
+                    </a>
+                    <div class="ms-auto">
+                          <a class="text-decoration-none text-success" href="in attractions-中央老街.html">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+                    </div>
+    
+                  </div>
+                </div>
+                
+                
+              </div>
+    
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  
+
+    <div class="footer py-5">
+    <div class="container d-lg-flex ">
+        <div class="footerLogo" >
+            <a href="#"><img src="data:image/png;base64,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" alt="footer_logo"></a>
+        </div>
+    
+        <div class="footerContent ms-lg-3 d-flex flex-column justify-content-center">
+            <p class="footerTitle fw-bold">每個文化景點都會有個詳細的背景故事</p>
+            <p class="footerText">本網站致力於發掘與檢索台灣每個景點最深層的在地文化透過使用者們相互分享與回饋，找到彼此最有感的連結打造台灣人心中具深度的旅遊方式尋找深刻的景點。</p>
+
+            <!-- 此連結要到7-1 -->
+            <a href="list-schedule.html" class="footerContentbtn mx-auto ms-lg-0">
+
+                <div class="position-relative">
+                    <div class="btnUnder"></div>
+
+                    <div class="d-flex align-items-center btnAbove ">
+                        <span class="fw-bold" style="color: white;letter-spacing: 4px;">開始我的景點之旅</span>
+                        <div class="footerContentbtnImg ms-2"></div>
+                    </div>
+                    
+                </div>
+                
+            </a>
+            
+        </div>
+
+        <div class="footerMenu d-flex flex-column ">
+            <ul>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+                <li><a href="privacy.html">隱私權保護政策</a></li>
+            </ul>
+
+            <span>Copyright © 2023 TaiwanIsee. All rights reserved.</span>
+        </div>
+    
+        
+    </div>
+</div>
+    <script>
+      const hearts = document.querySelectorAll('.heart');
+      
+      hearts.forEach(heart => {
+        heart.addEventListener('click', function() {
+          this.classList.toggle('active');
+        });
+      });
+    </script>
+    
+
+
+
+  </body>
+
+</html>
