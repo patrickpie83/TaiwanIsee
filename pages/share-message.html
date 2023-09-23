@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- 頁籤圖  -->
+<link rel="icon" href="../assets/images/logo-sm1.png">
+<title>Taiwan,I see.留言分享區</title>
+<!-- font Anton&Inter CDN  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- bootstrap reset CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- google font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+<!-- jquery CDN -->
+<script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="../js/all.js"></script>
+<link rel="stylesheet" href="/Taiwan-I-see/assets/main-a68aa50d.css">
+<!-- icon CDN -->
+<link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- AOS視差滾動 -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  });
+  </script>
+<%- include('./layout/header-logged'); -%>
+
+<!-- nav -->
+<div class="container my-4">
+    <div class="row">
+        <div class="col-md-6">
+            <span class="h2 text-primary fw-bold border-bottom border-3 border-primary">留言分享區</span>
+        </div>
+        <div class="col-md-6 text-end">
+            <a href="share-page.html">
+              <button class="btn btn-success rounded-pill py-2 w-md-25" type="button">
+                我也想分享
+                <span class="material-icons-outlined align-middle">chat</span>
+              </button>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4 mb-5 shadow-sm " data-aos="fade-up">
+            <div class="d-flex flex-column align-items-center justify-content-center col-2 border-end border-light p-4 text-center">
+                <img src="../assets/images/people-1.jpg" width="60" height="60" class="rounded-circle" alt="莊小姐的照片">
+                <h3>莊小姐</h3>
+            </div>            
+            <div class="col-10 p-4">
+                <form>
+                    <div class="mb-3 ">
+                        <textarea class="form-control bg-white shadow" id="exampleFormControlTextarea1" rows="5" required placeholder="鹿港老街帶我們穿越時光的奇妙之旅。這片地方散發著深厚的文化底蘊，古老的街道上擺滿了具有懷舊風味的店鋪，古色古香的建築令人陶醉。品味當地小吃，如鹿港肉圓和米糕，彷彿品味著台灣的歷史和風土人情。居民總是熱情地分享當地的故事和文化，使遊客感到賓至如歸。在這裡，我不僅感受到了濃厚的台灣風情，還重新連結了過去，這個地方充滿魅力，讓我深深著迷，期待再次的回訪。"></textarea>
+                    </div>
+                </form>
+                <!-- 按鈕 -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="share-schedule.html">
+                    <button class="btn btn-danger me-md-2 rounded-pill w-100" type="button">我想看他的行程</button>
+                    </a>
+                    <a href="reply-page.html">
+                    <button class="btn btn-warning rounded-pill w-100" type="button">我想回覆</button>
+                    </a>
+                </div>
+          </div>
+        </div>
+        <div class="row my-5 shadow-sm" data-aos="fade-up">
+            <div class="d-flex flex-column align-items-center justify-content-center col-2 border-end border-light p-4 text-center">
+                <img src="../assets/images/people-2.jpg" width="60" height="60" class="rounded-circle" alt="李先生的照片">
+                <h3>李先生</h3>
+            </div>            
+            <div class="col-10 p-4">
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control bg-white shadow" id="exampleFormControlTextarea1" rows="5" required placeholder="金門歷史民俗博物館深刻展現金門豐富多彩的歷史和文化。博物館的陳列品包括歷史文物、傳統工藝品和民俗展示，帶領遊客了解金門的過去和生活方式。特別是展示金門抗戰歷史的部分，令人深受感動，讓人更加珍惜和尊敬那段歷史。此外，博物館的布置和解說都非常出色，讓參觀變得深入而有趣。無論您對歷史感興趣還是想更多了解金門，這個博物館都是一個必訪之地，它讓我對金門的歷史和文化有了更深入的理解。"></textarea>
+                    </div>
+                </form> 
+                <!-- 按鈕 -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="share-schedule.html">
+                            <button class="btn btn-danger me-md-2 rounded-pill w-100" type="button">我想看他的行程</button>
+                        </a>
+                        <a href="reply-page.html">
+                            <button class="btn btn-warning rounded-pill w-100" type="button">我想回覆</button>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5 shadow-sm" data-aos="fade-up">
+            <div class="d-flex flex-column align-items-center justify-content-center col-2 border-end border-light p-4 text-center">
+                <img src="../assets/images/people-3.jpg" width="60" height="60" class="rounded-circle" alt="王小姐的照片">
+                <h3>王小姐</h3>
+            </div>            
+            <div class="col-10 p-4">
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control bg-white shadow" id="exampleFormControlTextarea1" rows="5" required placeholder="東勢客家文化園區是一個充滿歷史和文化價值的寶藏。這個地方深刻展示了台灣客家文化的精髓，包括建築、飲食、傳統工藝等。古老的客家建築和精美的客家花布讓人讚嘆不已，仿佛穿越到過去。品味當地的美食，如客家小吃和客家茶，是一種享受。此外，博物館和展示館充滿知識，讓我更深入了解客家文化的豐富內涵。"></textarea>
+                    </div>
+                </form>
+            <!-- 按鈕 -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="share-schedule.html">
+                            <button class="btn btn-danger me-md-2 rounded-pill w-100" type="button">我想看他的行程</button>
+                        </a>
+                        <a href="reply-page.html">
+                            <button class="btn btn-warning rounded-pill w-100" type="button">我想回覆</button>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5 shadow-sm" data-aos="fade-up">
+            <div class="d-flex flex-column align-items-center justify-content-center col-2 border-end border-light p-4 text-center">
+                <img src="../assets/images/people-4.jpg" width="60" height="60" class="rounded-circle" alt="黃小姐的照片">
+                <h3>黃小姐</h3>
+            </div>            
+            <div class="col-10 p-4">
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control bg-white shadow" id="exampleFormControlTextarea1" rows="5" required placeholder="蘭嶼是台灣的瑰寶，充滿原始的自然美和獨特的文化。島上的山川海岸线壯觀無比，潔净的海水和美麗的沙灘是度假勝地。蘭嶼的原住民部落充滿了獨特的文化，他們的音樂、舞蹈和傳統工藝深深吸引著遊客。此外，蘭嶼也是星空愛好者的天堂，夜晚的星空令人嘆為觀止。這個寧靜的島嶼為人提供了與自然和文化互動的難得機會，令人充實而難以忘懷。"></textarea>
+                    </div>
+                </form> 
+                <!-- 按鈕 -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="share-schedule.html">
+                            <button class="btn btn-danger me-md-2 rounded-pill w-100" type="button">我想看他的行程</button>
+                        </a>
+                        <a href="reply-page.html">
+                            <button class="btn btn-warning rounded-pill w-100" type="button">我想回覆</button>
+                        </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- 頁數 -->
+        <div class="btn-toolbar justify-content-center mb-5" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-secondary">1</button>
+                <button type="button" class="btn btn-outline-secondary">2</button>
+                <button type="button" class="btn btn-outline-secondary">3</button>
+                <button type="button" class="btn btn-outline-secondary">4</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<%- include('./layout/footer'); -%>
+
+<script type="module" src="../main.js"></script>
+</body>
+
+</html>

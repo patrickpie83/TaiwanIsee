@@ -1,4 +1,60 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar-toggler{
+  color: #ffffff;
+  border: none;
 }
+
+.searchArea{
+  background:rgba(0,0,0,0);
+  border:none;
+  color:white;
+  outline: none;
+}
+
+.borderBtm{
+  width: 160px;
+  border-bottom: 1px solid white;
+}
+
+
+.navbar a{
+  color:#ffffff;
+
+}
+
+.nav-item a:hover{
+  color:#FFFFFF;
+}
+
+
+
+.borderPill{
+  width: 113px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+}
+
+.borderPill:hover{
+  opacity: 1;
+  background-color: $primary;
+  border: 1px solid $primary;
+}
+
+.borderPill a:hover{
+  opacity: 1;
+}
+
+.searchArea::placeholder{
+  color:#E9E9E9;
+}
+
+.navbar-brand{
+
+  display: block;
+  background-image: url('../images/logo_header_sm.png');
+  width: 56px;
+  height: 84px;
+
+}
+
+
+

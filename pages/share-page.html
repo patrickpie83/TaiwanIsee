@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- 頁籤圖  -->
+<link rel="icon" href="../assets/images/logo-sm1.png">
+<title>Taiwan,I see.我想回覆頁面</title>
+<!-- font Anton&Inter CDN  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- bootstrap reset CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- google font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+<!-- jquery CDN -->
+<script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="../js/all.js"></script>
+<link rel="stylesheet" href="/Taiwan-I-see/assets/main-a68aa50d.css">
+</head>
+
+<body>
+<%- include('./layout/header-logged'); -%>
+
+<!-- nav -->
+<div class="container my-4">
+    <span class="h2 text-primary fw-bold border-bottom border-3 border-primary">分享我的體驗</span>
+    <div class="recommand-footer mt-5 mb-2">
+        <div class="my-3">
+            <img src="../assets/images/people-9.jpg" width="35" height="35" class="rounded-circle" alt="劉小姐的照片">
+            <span>劉小姐</span>
+        </div>
+        <div class="recommand-info ">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">分享內容</label>
+                    <textarea class="form-control bg-white shadow" id="exampleFormControlTextarea1" rows="6" required placeholder=
+                    "梅山太平老街是我曾經造訪過的台灣地方中，最令人難以忘懷的一個。這個老街充滿濃厚的懷舊情懷，每一塊古老的磚瓦和木頭建築都仿佛訴說著過去的故事。漫步在這條老街上，彷彿穿越時光，感受到了台灣歷史的厚重。太平老街的古色古香，令人印象深刻。古老的店舖、傳統的攤販、懷舊的招牌，處處都充滿著台灣的獨特魅力。尤其是街頭小吃，味道讓人回味無窮，從肉圓到豆花，每一樣都是美食的極致享受。太平老街的居民也非常熱情友善，他們樂於與遊客交流，分享當地的歷史和文化。這種人情味讓我感到賓至如歸，讓整個旅程更加難忘。"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 上傳圖片 -->
+    <div class=" d-flex justify-content-between align-items-center" style="margin-top: 80px;margin-bottom: 32px;">
+        <h2 class="text-primary">上傳圖片</h2>
+        <div>
+            <button class="btn btn-danger me-2 rounded-pill" type="button">載入照片</button>
+            <button class="btn btn-secondary rounded-pill" type="button">上傳</button>
+        </div>
+    </div>    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100 rounded-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="90%" fill="currentColor" class="bi bi-card-image card-img-top" viewBox="0 0 16 16">
+                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+                </svg>
+            </div>
+        </div>        
+        <div class="col">
+            <div class="card h-100 rounded-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="90%" fill="currentColor" class="bi bi-card-image card-img-top" viewBox="0 0 16 16">
+                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+                </svg>
+            </div>
+        </div>  
+        <div class="col">
+            <div class="card h-100 rounded-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="90%" fill="currentColor" class="bi bi-card-image card-img-top" viewBox="0 0 16 16">
+                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 03 0z"/>
+                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+                </svg>
+            </div>
+        </div>  
+    </div>
+    <!-- 我的行程 -->
+    <div>
+        <h2 class="mb-4 text-primary" style="margin-top: 80px;">我的行程</h2>
+        <div class="row my-4">
+            <div class="container2">
+                <ul class="progressbar">
+                    <li class="active">景點名稱</li>
+                    <li>景點名稱</li>
+                    <li>景點名稱</li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="share-message.html">
+              <button class="btn btn-danger me-md-2 rounded-pill" type="button">留言</button>
+            </a>
+            <a href="share-schedule.html">
+              <button class="btn btn-secondary rounded-pill" type="button">取消</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<%- include('./layout/footer'); -%>
+
+<script type="module" src="../main.js"></script>
+</body>
+</html>

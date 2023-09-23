@@ -1,0 +1,22 @@
+.bg-g{
+    background: #478058;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 20
+}
+.form-label {
+    font-size: 18px; 
+}
+.container2 {
+    width: 100%;
+}  
+
+.shareimg {
+  height: 100%; /* 圖片高度百分比 */
+  width: 100%; /* 圖片寬度百分比 */
+  object-fit: cover; /* 圖片保持縱横比，覆蓋整個容器 */
+}

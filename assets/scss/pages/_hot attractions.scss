@@ -1,0 +1,23 @@
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 20
+}
+
+
+.bor-rad-24{
+    border-radius: 24px;
+}
+
+//fixed
+.box{
+    position:relative
+}
+.fix-box{
+    position:fixed;
+    z-index:-10;
+    top:150px;
+}

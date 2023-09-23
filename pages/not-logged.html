@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 頁籤圖  -->
+    <link rel="icon" href="../assets/images/logo-sm1.png">
+    <title>Taiwan,I see.尚未登入會員</title>
+    <!-- font Anton&Inter CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootstrap reset CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    </head>
+
+  <body>
+    <%- include('./layout/header-notlog'); -%>
+
+    <div class="container my-4">
+      <p class="text-center" style="color:#EA5400;">該功能僅限會員使用，請先登入會員</p>
+      <span class="h2 text-primary fw-bold border-bottom border-3 border-primary">會員登入</span>
+      <div class="row mt-5 justify-content-xl-evenly justify-content-center">
+        <div class="col-xl-4 d-none d-xl-block">
+          <img src="../assets/images/this_month.png" alt="this_month">
+        </div>
+        <div class="col-xl-5 col-lg-8">
+          <form>
+            <div class="mb-3">
+              <label for="accountNumber" class="form-label">帳號</label>
+              <input type="text" class="form-control" disabled value="WangXiaoming" id="accountNumber" style="border-color: #9F9F9F;">
+            </div>
+
+            <div class="mb-2">
+              <label for="accountPassword" class="form-label">密碼</label>
+              <input type="password" disabled value="12345678" class="form-control mb-2" id="accountPassword" style="border-color: #9F9F9F;">
+            </div>
+            <div class="d-flex justify-content-end mb-2">
+              <a href="#" style="color: #9F9F9F;">忘記密碼？</a>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="rememberCheck">
+              <label class="form-check-label" for="rememberCheck">保持會員登入</label>
+            </div>
+
+            <a href="index-logged.html"><div type="submit" class="btn btn-primary mb-4" style="width: 100%;color: #ffffff;">登入</div></a>
+          </form>
+
+          <div class="btn border border-2 text-secondary w-100 mb-2 ">
+            <img src="../assets/images/icon_social_google.png" alt="icon_social_google" style="width: 18px;height: 18px;margin-right: 4px;">使用Google帳號登入</div>
+          <div class="btn border border-2 text-secondary w-100 mb-2 ">
+            <img src="../assets/images/icon_social_apple.png" alt="icon_social_google" style="width: 18px;height: 18px;margin-right: 4px;">使用Apple帳號登入</div>
+          <div class="btn border border-2 text-secondary w-100 mb-2 ">
+            <img src="../assets/images/icon_social_facebook.png" alt="icon_social_google" style="width: 18px;height: 18px;margin-right: 4px;">使用Facebook帳號登入</div>
+          <div class="d-flex justify-content-center mt-3">
+            <a href="sign-up.html" style="color: #00B74F;text-decoration: none;"> &lt;尚未擁有帳號，立即加入會員&gt; </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <%- include('./layout/index_footer-notlog'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+
+</html>

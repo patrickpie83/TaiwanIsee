@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- 頁籤圖  -->
+<link rel="icon" href="../assets/images/logo-sm1.png">
+<title>Taiwan,I see.自訂行程</title>
+<!-- font Anton&Inter CDN  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- bootstrap reset CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- google font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+<!-- jquery CDN -->
+<script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="../js/all.js"></script>
+
+</head>
+
+<body>
+<%- include('./layout/header-logged'); -%>
+
+
+<div class="box">
+<img class="fix-box" src="../assets/images/leaves.png" alt="leaves">
+</div>
+  
+<div class="container my-4">
+    <span class="h2 text-primary fw-bold border-bottom border-3 border-primary">自訂行程</span>
+
+    <div class="mt-5 flex-column flex-md-row d-flex justify-content-center">
+
+        <ul class="col-5 list-unstyled mt-2">
+            <div class="mb-3 row">
+                <label for="staticname" class="col-sm-2 col-form-label">行程名稱</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="staticname" placeholder="行程名稱">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputtext" class="col-sm-2 col-form-label">出發日期</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputtext" placeholder="行程日期">
+                </div>
+            </div>
+        </ul>
+        <div class="col-5 d-flex align-items-center justify-content-end">
+            <button class="btn btn-outline-danger me-2" type="button">行程修改/儲存</button>
+            <button class="btn btn-outline-info me-2" type="button">行程封面照</button>
+            <a class="btn btn-outline-info me-2" href="view-schedule.html">行程總導覽</a>
+            <button class="btn btn-outline-warning" type="button">新增天數</button>
+        </div>
+    </div>
+
+
+    <!--DAY nav-->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="DAY1-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="DAY1" aria-selected="true">DAY1</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="DAY2-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="DAY2" aria-selected="false">DAY2</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="DAY3-tab" data-bs-toggle="tab" data-bs-target="#lots" type="button" role="tab" aria-controls="DAY3" aria-selected="false">DAY3</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="DAY4-tab" data-bs-toggle="tab" data-bs-target="#paging" type="button" role="tab" aria-controls="DAY4" aria-selected="false">DAY4</button>
+        </li>
+    </ul>
+    
+<!--DAY 1-->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="DAY1-tab">
+
+            <div class="row d-flex align-items-center flex-column">
+                <div class="pt-2">
+                    <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d231377.6898074121!2d121.2992414882545!3d25.024692247436697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x34683da78b0cffcf%3A0xe2a2cbcf1cebbd89!2z5qGD5ZyS5biC5a6i5a625paH5YyW6aSoIDMyNeahg-WckuW4gum-jea9reWNgOS4reato-i3r-S4ieael-autTUwMOiZnw!3m2!1d24.8455369!2d121.2345215!4m5!1s0x345d552cd8a649b1%3A0x435e60136efa3a0e!2z5piH6auY6YeMIDIyMuaWsOWMl-W4gua3seWdkeWNgA!3m2!1d25.003265499999998!2d121.6296642!4m5!1s0x3442ab9bd872379b%3A0x3e09259241f74b9!2zMTA15Y-w5YyX5biC5p2-5bGx5Y2A6aWS5rKz6KGX!3m2!1d25.0504197!2d121.5747552!4m5!1s0x3442ac3acd404a7d%3A0x5d6d7018397a09c1!2z5ZyL56uL5pWF5a6u5Y2a54mp6ZmiIDExMeWPsOWMl-W4guWjq-ael-WNgOiHs-WWhOi3r-S6jOautTIyMeiZnw!3m2!1d25.1023554!2d121.5484925!4m5!1s0x345d4c76bdfaef6b%3A0x71eaba27708ea540!2z6YeO5p-z5Zyw6LOq5YWs5ZySIDIwN-aWsOWMl-W4guiQrOmHjOWNgA!3m2!1d25.2038652!2d121.68979069999999!5e0!3m2!1szh-TW!2stw!4v1693704831581!5m2!1szh-TW!2stw" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/桃園客家文化館-2.jpg" height="300" alt="桃園客家文化館-2">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">桃園客家文化館</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">桃園市龍潭區中正路三林段500號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="fst-italic text-center fs-5 my-3 ">
+                    <span class="align-top material-symbols-outlined">distance </span>車距44分</p>
+
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/深坑老街-2.PNG" height="300" alt="深坑老街-2">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">深坑老街</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">新北市深坑區深坑街</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="fst-italic text-center fs-5 my-3">
+                    <span class="align-top material-symbols-outlined">distance </span>車距24分</p>
+
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/饒河街觀光夜市-2.jpg" height="300" alt="饒河街觀光夜市-2">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">饒河街觀光夜市</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">台北市松山區饒河街</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="fst-italic text-center fs-5 my-3">
+                    <span class="align-top material-symbols-outlined">distance </span>車距18分</p>
+
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/故宮博物院-2.jpg" height="300" alt="故宮博物院-2">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">故宮博物院</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">台北市士林區至善路二段221號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="fst-italic text-center fs-5 my-3">
+                    <span class="align-top material-symbols-outlined">distance </span>車距47分</p>
+
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/野柳地質公園-2.jpg" height="300" alt="野柳地質公園-2">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">野柳地質公園</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">新北市萬里區港東路167-1號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="target" id="target2"></div>
+        </div>
+<!--DAY 2-->
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="DAY2-tab">
+            <div class="row d-flex justify-content-center flex-column align-items-center">
+                <div class="pt-2">
+                    <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d58113.38634454565!2d118.31588887164489!3d24.447778969266253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x3414bb67c968dec9%3A0xce61747551d7a343!2z6YeR6ZaA5q235Y-y5rCR5L-X5Y2a54mp6aSoIDg5MOmHkemWgOe4o-mHkeaymemOruaWh-WMlui3rzQ1MOW3tzUy6Jmf!3m2!1d24.4992809!2d118.4033966!4m5!1s0x3414a21a013bba33%3A0x42cfc0396230c6a8!2z5paH6Ie65a-25aGUIDg5MzQ26YeR6ZaA57ij6YeR5Z-O6Y6u6YeR6ZaAIOe4oyDph5Eg5Z-O6Y6uIOmHkemWgCDln47ljZcg56OQIOWxsSDljZfnq68!3m2!1d24.398746!2d118.306005!4m5!1s0x3414bb67c968dec9%3A0xce61747551d7a343!2z6YeR6ZaA5q235Y-y5rCR5L-X5Y2a54mp6aSoIDg5MOmHkemWgOe4o-mHkeaymemOruaWh-WMlui3rzQ1MOW3tzUy6Jmf!3m2!1d24.4992809!2d118.4033966!5e0!3m2!1szh-TW!2stw!4v1693705673033!5m2!1szh-TW!2stw" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/金門歷史民俗博物館-2.jpeg" height="300">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">金門歷史民俗博物館</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">金門縣金沙鎮文化路450巷52號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="fst-italic text-center fs-5 my-3">
+                    <span class="align-top material-symbols-outlined">distance </span>車距29分</p>
+
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/文臺寶塔-2.jpeg" height="300" alt="文臺寶塔-2">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">文臺寶塔</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">金門縣金城鎮古城村大文台古崗100號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="fst-italic text-center fs-5 my-3">
+                    <span class="align-top material-symbols-outlined">distance </span>車距28分</p>
+
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/金門歷史民俗博物館-2.jpeg" height="300" alt="金門歷史民俗博物館-2">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">金門歷史民俗博物館</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">金門縣金沙鎮文化路450巷52號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--DAY 3-->
+        <div class="tab-pane fade" id="lots" role="tabpanel" aria-labelledby="DAY3-tab">
+            <div class="row d-flex justify-content-center flex-column align-items-center">
+                <div class="pt-2">
+                    <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d938627.912960047!2d120.21317056083375!3d23.22432895381187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x3468a3b46b47e5dd%3A0x2ee599e52a8cafd4!2z6a-J6a2a5r2tIDk3NOiKseiTrue4o-WjveixkOmEiQ!3m2!1d23.9278268!2d121.5098787!4m5!1s0x346e3b974444d9bf%3A0x7e4c95580ce58e7e!2z5ra85bGx6YGK5oap5Y2AIDkwM-Wxj-adsee4o-eRquWutumEiea2vOWxseadkea2vOWxsTE0LTIw6Jmf!3m2!1d22.6861185!2d120.6380465!4m5!1s0x346914d31b8b93a3%3A0xbf6c4c99ddb3fe5a!2z5qKn5qOy5aSc5biCIDQzNeWPsOS4reW4guaip-ajsuWNgOaWh-WMlui3r-S4gOautTUzN-iZnw!3m2!1d24.247821!2d120.530124!5e0!3m2!1szh-TW!2stw!4v1693705837229!5m2!1szh-TW!2stw" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/鯉魚潭-2.jpg" height="300" alt="鯉魚潭-2">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">鯉魚潭</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">花蓮縣壽豐鄉台9丙線</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="fst-italic text-center fs-5 my-3">
+                    <span class="align-top material-symbols-outlined">distance </span>車距5小時35分</p>
+                
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/涼山遊憩區-2.jpg" height="300" alt="涼山遊憩區-2">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">涼山遊憩區</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">屏東縣涼山村涼山14-20號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="fst-italic text-center fs-5 my-3">
+                    <span class="align-top material-symbols-outlined">distance </span>車距2小時29分</p>
+                
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/梧棲夜市-2.jpg" height="300" alt="梧棲夜市-2">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">梧棲夜市</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">台中市梧棲區文化路一段537號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--DAY 4-->
+
+        <div class="tab-pane fade draggable" id="paging" role="tabpanel" aria-labelledby="DAY4-tab">
+            <div class="row d-flex justify-content-center flex-column align-items-center">
+                <div class="pt-2">
+                    <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d58236.73441873114!2d120.55935442002357!3d24.178889665212814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m5!1s0x34693e1e5070a7a7%3A0xa462167a0845084d!2z6Lev5oCd576p5pWZ5aCCIDQwN-WPsOS4reW4guilv-Wxr-WNgOWPsOeBo-Wkp-mBk-Wbm-autTE3MjfomZ8!3m2!1d24.1788952!2d120.6005539!4m0!5e0!3m2!1szh-TW!2stw!4v1693710032171!5m2!1szh-TW!2stw" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="card col-10 my-3 ps-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/路思義教堂-3.jpeg" height="300" alt="路思義教堂-3">
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="text-end">
+                                <a href="#" class="text-danger">
+                                    <span class="material-symbols-outlined fs-3">delete</span></a>
+                            </div>
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">路思義教堂</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">台中市西屯區台灣大道四段1727號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--button-->
+    <div class="d-grid gap-2 col-6 mx-auto mb-4">
+        <a class="btn btn-outline-success" href="list-schedule.html">
+            <span class="align-top material-symbols-outlined">add </span>新增行程</a>
+    </div>
+
+</div>
+
+
+
+
+
+
+<%- include('./layout/footer'); -%>
+
+
+
+<script type="module" src="../main.js"></script>
+
+<script>
+//分頁
+    var triggerTabList = [].slice.call(document.querySelectorAll('#myTab button'))
+    triggerTabList.forEach(function (triggerEl) {
+    var tabTrigger = new bootstrap.Tab(triggerEl)
+
+    triggerEl.addEventListener('click', function (event) {
+        event.preventDefault()
+        tabTrigger.show()
+    });
+});
+
+
+
+</script>
+
+</body>
+
+</html>

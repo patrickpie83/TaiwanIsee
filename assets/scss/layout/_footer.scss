@@ -1,4 +1,126 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background: #333333;
+}
+
+.footerLogo{
+  text-align: center;
+ }
+
+
+.footerTitle{
+  font-size: 1.125rem;
+  line-height: 1.2;
+  color: #E9E9E9;
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.footerText{
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: #E9E9E9;
+  margin-bottom: 0.75rem;
+}
+
+
+
+// footerContentbtn為共用元件
+.footerContentbtn{
+  text-decoration: none;
+  width: 307px;
+  display: block;
+}
+.footerContentbtnImg{
+  background-image: url('../images/Line.png');
+  width: 100px;
+  height: 1px;
+}
+.btnUnder{
+  background-color: $primary;
+  width: 130px;
+  height: 43px;
+  border-radius: 100px;
+}
+.footerContentbtn:hover{
+  opacity: 1;
+  .btnUnder{
+    background-color: $primary;
+    width: 307px;
+    height: 43px;
+    border-radius: 100px;
+    transition:0.3s;
+  }
+}
+
+.btnAbove{ 
+  position: absolute;
+  top:50%;
+  transform:translate(24px,-50%);
+}
+// footerContentbtn為共用元件
+
+
+
+
+.footerMenu{
+  margin-top: 2rem;
+
+  ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;  
+    margin-bottom: 1rem;
+  }
+
+  a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.2;
+  }
+
+  a:hover{
+    color: #ffffff;
+    opacity: 0.7;
+  }
+
+  span{
+    font-size: 0.875rem;
+    line-height: 1.2;
+    color: #B4875E;
+    text-align: center;
+  }
+}
+
+@media(min-width:991px){
+  .footerContent{
+    width: 40%;
+  }
+
+  .footerTitle{
+    text-align: start;
+    padding-top: 0;
+  }
+
+  .footerMenu{
+    margin-top: auto;
+    margin-left:auto;
+
+    ul{
+      margin-right: 0;
+    }
+
+    span{
+      margin-bottom: 0.75rem;
+    }
+
+  }
+
+
+
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- 頁籤圖  -->
+<link rel="icon" href="../assets/images/logo-sm1.png">
+<title>Taiwan,I see.我想回覆頁面</title>
+<!-- font Anton&Inter CDN  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- bootstrap reset CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- google font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+<!-- jquery CDN -->
+<script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="../js/all.js"></script>
+<link rel="stylesheet" href="/Taiwan-I-see/assets/main-a68aa50d.css">
+</head>
+
+<body>
+<%- include('./layout/header-logged'); -%>
+<!-- nav -->
+<div class="container my-4">
+    <span class="h2 text-primary fw-bold border-bottom border-3 border-primary">我想回覆</span>
+    <div class="recommand-footer mt-5 mb-3">
+        <div class="my-3">
+            <img src="../assets/images/people-9.jpg" width="35" height="35" class="rounded-circle" alt="劉小姐的照片">
+            <span>劉小姐</span>
+        </div>        
+        <div class="recommand-info ">           
+            <form>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">回覆內容</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="15" required placeholder="請填寫回覆內容"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 按鈕 -->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+         <button class="btn btn-danger me-md-2 rounded-pill" type="button">回覆</button>
+         <button class="btn btn-secondary rounded-pill" type="button">取消</button>
+    </div>
+</div>
+
+
+
+
+
+<%- include('./layout/footer'); -%>
+
+
+
+<script type="module" src="../main.js"></script>
+
+
+</body>
+
+</html>
